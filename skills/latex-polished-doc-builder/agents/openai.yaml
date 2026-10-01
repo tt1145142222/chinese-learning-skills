@@ -1,0 +1,5 @@
+interface:
+  display_name: "LaTeX 文档精排转换"
+  short_description: "把 Word、PPT、PDF、图片、手写笔记等精排成 LaTeX/PDF。"
+  default_prompt: "Use $latex-polished-doc-builder to convert this document into a polished printable LaTeX/PDF deliverable."
+

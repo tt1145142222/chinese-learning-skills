@@ -1,0 +1,233 @@
+% !TeX program = xelatex
+% Publication-style template for math/science practice packets.
+% Duplicate this file as student.tex and solutions.tex, then set \showanswersfalse or \showanswerstrue.
+\documentclass[UTF8,zihao=-4,scheme=chinese]{ctexart}
+
+\usepackage[a4paper,top=21mm,bottom=20mm,left=19mm,right=19mm,headheight=14pt,headsep=6mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{array,booktabs,tabularx,longtable,multicol}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{needspace}
+\usepackage{lastpage}
+
+\definecolor{ink}{HTML}{1F2933}
+\definecolor{muted}{HTML}{52606D}
+\definecolor{accent}{HTML}{176B87}
+\definecolor{accentSoft}{HTML}{E7F3F6}
+\definecolor{line}{HTML}{CBD5E1}
+\definecolor{answerBg}{HTML}{F7FBFC}
+
+\hypersetup{hidelinks}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\linespread{1.08}
+\setlist{nosep,leftmargin=2em}
+
+\newif\ifshowanswers
+\showanswersfalse
+% For the solution edition, change the previous line to:
+% \showanswerstrue
+
+\newcommand{\PacketTitle}{数理综合练习}
+\newcommand{\PacketSubtitle}{专题名称 / 章节范围}
+\newcommand{\SuggestedTime}{120 分钟}
+\newcommand{\TotalScore}{100 分}
+\newcommand{\EditionName}{学生练习版}
+
+\ifshowanswers
+  \renewcommand{\EditionName}{教师解析版}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small\textcolor{muted}{\PacketTitle}}
+\rhead{\small\textcolor{muted}{\EditionName}}
+\cfoot{\small\textcolor{muted}{第 \thepage 页 / 共 \pageref*{LastPage} 页}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\section}
+  {\Large\bfseries\color{ink}}
+  {\thesection}{0.6em}{}
+  [\vspace{-0.2em}{\color{accent}\titlerule[0.8pt]}]
+\titleformat{\subsection}
+  {\large\bfseries\color{ink}}
+  {\thesubsection}{0.6em}{}
+
+\newtcolorbox{guidebox}{
+  enhanced,
+  colback=accentSoft,
+  colframe=accent,
+  boxrule=0.6pt,
+  arc=1mm,
+  left=2.5mm,
+  right=2.5mm,
+  top=1.8mm,
+  bottom=1.8mm
+}
+
+\newtcolorbox{answerbox}{
+  enhanced,
+  breakable,
+  colback=answerBg,
+  colframe=accent,
+  boxrule=0.5pt,
+  arc=1mm,
+  left=2.5mm,
+  right=2.5mm,
+  top=1.8mm,
+  bottom=1.8mm
+}
+
+\newcommand{\Tag}[1]{%
+  \begingroup
+  \setlength{\fboxsep}{2pt}%
+  \colorbox{accentSoft}{\textcolor{accent}{\scriptsize\bfseries\strut #1}}%
+  \endgroup
+}
+
+\newcommand{\ImportanceLow}{\(\bigstar\)}
+\newcommand{\ImportanceMedium}{\(\bigstar\bigstar\)}
+\newcommand{\ImportanceHigh}{\(\bigstar\bigstar\bigstar\)}
+
+\newcounter{problem}
+\newenvironment{problem}[3]{%
+  \Needspace{8\baselineskip}
+  \refstepcounter{problem}
+  \vspace{0.45em}
+  {\large\bfseries\color{ink}题 \theproblem}\hspace{0.6em}
+  \Tag{#1}\hspace{0.25em}\Tag{#2}\hspace{0.25em}\Tag{#3 分}
+  \par\vspace{0.35em}
+}{%
+  \par\vspace{0.65em}
+}
+
+\newcommand{\AnswerSpace}[1][32mm]{%
+  \ifshowanswers\else
+    \par\vspace{0.25em}
+    \begin{tcolorbox}[
+      enhanced,
+      colback=white,
+      colframe=line,
+      boxrule=0.4pt,
+      arc=1mm,
+      height=#1,
+      left=2mm,
+      right=2mm,
+      top=2mm,
+      bottom=2mm
+    ]
+    \end{tcolorbox}
+  \fi
+}
+
+\newcommand{\Solution}[5]{%
+  \ifshowanswers
+    \begin{answerbox}
+      \textbf{答案：} #1
+
+      \textbf{考点：} #2
+
+      \textbf{方法与技巧：} #3
+
+      \textbf{过程：}
+
+      #4
+
+      \textbf{采分点与易错点：}
+
+      #5
+    \end{answerbox}
+  \fi
+}
+
+\newcommand{\TitleBlock}{%
+  \begin{center}
+    {\zihao{2}\bfseries\color{ink}\PacketTitle\par}
+    \vspace{0.25em}
+    {\large\color{muted}\PacketSubtitle\par}
+    \vspace{0.65em}
+    \Tag{\EditionName}\hspace{0.4em}
+    \Tag{建议用时：\SuggestedTime}\hspace{0.4em}
+    \Tag{总分：\TotalScore}
+  \end{center}
+  \vspace{0.6em}
+}
+
+\newcommand{\CompletionGuide}{%
+  \ifshowanswers\else
+    \begin{guidebox}
+      \textbf{完成建议：} 先独立完成选择与填空，再集中处理大题；遇到卡壳题先标记，不要长时间停留。批改后把失分原因、正确方法和复习日期写入文末错题复盘表。
+    \end{guidebox}
+  \fi
+}
+
+\newcommand{\WrongQuestionTable}{%
+  \ifshowanswers\else
+  \clearpage
+  \section*{错题复盘表}
+  \begingroup
+  \renewcommand{\arraystretch}{1.55}
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}p{0.08\linewidth}X>{\raggedright\arraybackslash}p{0.31\linewidth}>{\centering\arraybackslash}p{0.16\linewidth}>{\centering\arraybackslash}p{0.11\linewidth}}
+    \toprule
+    题号 & 失分原因 & 正确方法/关键公式 & 重做结果 & 复习日期 \\
+    \midrule
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\ \hline
+    \rule{0pt}{10mm} & & & & \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+  \fi
+}
+
+\begin{document}
+
+\TitleBlock
+\CompletionGuide
+
+\section*{一、基础与方法识别}
+
+\begin{problem}{预测题}{\ImportanceHigh}{10}
+设函数 \(f(x)=x^3-3x\)。求 \(f(x)\) 在区间 \([-2,2]\) 上的最大值与最小值。
+\AnswerSpace[35mm]
+\Solution
+{最大值为 \(2\)，最小值为 \(-2\)。}
+{导数、单调性、闭区间最值。}
+{先求驻点，再比较端点与驻点函数值。}
+{
+\[
+f'(x)=3x^2-3=3(x-1)(x+1),
+\]
+故驻点为 \(x=-1,1\)。比较
+\[
+f(-2)=-2,\quad f(-1)=2,\quad f(1)=-2,\quad f(2)=2.
+\]
+因此最大值为 \(2\)，最小值为 \(-2\)。
+}
+{
+\begin{enumerate}
+  \item 正确求导并求出驻点，3 分。
+  \item 比较端点与驻点函数值，5 分。
+  \item 写出最大值与最小值，2 分。
+  \item 易错点：只检查驻点，遗漏闭区间端点。
+\end{enumerate}
+}
+\end{problem}
+
+\WrongQuestionTable
+
+\end{document}

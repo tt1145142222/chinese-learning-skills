@@ -1,0 +1,4 @@
+interface:
+  display_name: "数理类题目生成"
+  short_description: "从数理材料生成出版级 LaTeX/PDF 教辅练习卷"
+  default_prompt: "Use $math-practice-generator to create a publish-ready LaTeX/PDF math/science practice packet with point values, a wrong-question review table, and a detailed scoring answer key from my course materials."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "迭代上课 Skill"
+  short_description: "根据课堂证据、练习与打卡持续生成下一轮教学材料方案"
+  default_prompt: "Use $iterative-lesson-cycle to continue this course from the latest class evidence and learner check-in."

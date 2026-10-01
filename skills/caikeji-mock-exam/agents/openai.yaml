@@ -1,0 +1,4 @@
+interface:
+  display_name: "材科基模拟卷"
+  short_description: "按章节生成材料科学基础期末模拟卷和详细答案解析PDF"
+  default_prompt: "Use $caikeji-mock-exam to generate a chapter-specific 材科基 mock exam packet with a student PDF and a detailed answer PDF."

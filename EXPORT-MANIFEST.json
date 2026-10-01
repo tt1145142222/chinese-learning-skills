@@ -1,0 +1,169 @@
+{
+  "package": "chinese-learning-skills",
+  "approved_skills": [
+    "caikeji-mock-exam",
+    "math-practice-generator",
+    "iterative-lesson-cycle",
+    "maogai-review-doc-builder",
+    "latex-polished-doc-builder"
+  ],
+  "license": "No open-source license selected; no additional copyright grant",
+  "source_files": [
+    {
+      "file": "skills/caikeji-mock-exam/SKILL.md",
+      "source_sha256": "6569a232b39cb33a433e41f0dc48b481b7f5c0009721a81264588d403e76d425",
+      "export_sha256": "f3484ae18c270e3b809fecea48890d285cfab4513660e75a91c7bc64bfda3147",
+      "changes": [
+        "Removed private optional feature routing and workflow from the public copy"
+      ]
+    },
+    {
+      "file": "skills/caikeji-mock-exam/agents/openai.yaml",
+      "source_sha256": "abfcef2fa596f3be6034cc3e049f8a20347ae2460964d98a1d341b95a37d7915",
+      "export_sha256": "e36842e676e97e17cabdd0bdd5016bee137bc23759a25ed5b844629b62d65370",
+      "changes": []
+    },
+    {
+      "file": "skills/iterative-lesson-cycle/SKILL.md",
+      "source_sha256": "f225b616b8fb3f04dc9d03ea6c1c7b7545398838d90a0204999dec06f23d0c22",
+      "export_sha256": "f225b616b8fb3f04dc9d03ea6c1c7b7545398838d90a0204999dec06f23d0c22",
+      "changes": []
+    },
+    {
+      "file": "skills/iterative-lesson-cycle/agents/openai.yaml",
+      "source_sha256": "df4c0c7072e060a33e0b22562c4df31ff16ca75c7239da900c16265a7841c257",
+      "export_sha256": "9c9eba4d4ced440509c8ca8fbb1b33396bab1cf83c2467714424f059b31fd305",
+      "changes": []
+    },
+    {
+      "file": "skills/iterative-lesson-cycle/assets/templates/course-profile.md",
+      "source_sha256": "8b41bd9f7ae532250f16f87b7bb4fede969088d7f961825097a0b748c6da0ee1",
+      "export_sha256": "8b41bd9f7ae532250f16f87b7bb4fede969088d7f961825097a0b748c6da0ee1",
+      "changes": []
+    },
+    {
+      "file": "skills/iterative-lesson-cycle/assets/templates/iteration-log.md",
+      "source_sha256": "e90b53defcc280920349f9321c1af04db07adffbdf3fe75528f380579ee311e7",
+      "export_sha256": "e90b53defcc280920349f9321c1af04db07adffbdf3fe75528f380579ee311e7",
+      "changes": []
+    },
+    {
+      "file": "skills/iterative-lesson-cycle/assets/templates/learner-model.md",
+      "source_sha256": "83be6c2e54e6411547fb2791190e7524835d07ff58be36a738a275235debaab6",
+      "export_sha256": "83be6c2e54e6411547fb2791190e7524835d07ff58be36a738a275235debaab6",
+      "changes": []
+    },
+    {
+      "file": "skills/iterative-lesson-cycle/references/evidence-and-quality.md",
+      "source_sha256": "5bdea904b6daa87ce163070ec6efbb90c0b0ed7f84d965b927eff4a0f3e6468f",
+      "export_sha256": "5bdea904b6daa87ce163070ec6efbb90c0b0ed7f84d965b927eff4a0f3e6468f",
+      "changes": []
+    },
+    {
+      "file": "skills/iterative-lesson-cycle/references/output-contracts.md",
+      "source_sha256": "cb15c3960e6e6867764d17889c3ffe816ff01d05e2106fffe1ea0f2c5990db50",
+      "export_sha256": "cb15c3960e6e6867764d17889c3ffe816ff01d05e2106fffe1ea0f2c5990db50",
+      "changes": []
+    },
+    {
+      "file": "skills/iterative-lesson-cycle/references/workflow.md",
+      "source_sha256": "a9eca97598298843d4906c7a6fac5ad8ba72888b834ffbffdd306566d1e4e595",
+      "export_sha256": "a9eca97598298843d4906c7a6fac5ad8ba72888b834ffbffdd306566d1e4e595",
+      "changes": []
+    },
+    {
+      "file": "skills/math-practice-generator/SKILL.md",
+      "source_sha256": "8a7bebad099e5ab8390c3cb8b2f9064d350d35a3d73c88306a1f256411327a53",
+      "export_sha256": "8a7bebad099e5ab8390c3cb8b2f9064d350d35a3d73c88306a1f256411327a53",
+      "changes": []
+    },
+    {
+      "file": "skills/math-practice-generator/agents/openai.yaml",
+      "source_sha256": "680da183576ca39baf71a21881088d031d34813df40f9b2dd13c819d011e46fb",
+      "export_sha256": "680da183576ca39baf71a21881088d031d34813df40f9b2dd13c819d011e46fb",
+      "changes": []
+    },
+    {
+      "file": "skills/math-practice-generator/assets/publishing-practice-template.tex",
+      "source_sha256": "32ead1bc0c463549b882186890769d56703374262bdc951e86493a7c2ba492f6",
+      "export_sha256": "32ead1bc0c463549b882186890769d56703374262bdc951e86493a7c2ba492f6",
+      "changes": []
+    },
+    {
+      "file": "skills/math-practice-generator/references/latex-pdf.md",
+      "source_sha256": "ab0a555d909cb14878023d0585701515fb06262ef0c734a361ba729c3d251335",
+      "export_sha256": "ab0a555d909cb14878023d0585701515fb06262ef0c734a361ba729c3d251335",
+      "changes": []
+    },
+    {
+      "file": "skills/math-practice-generator/references/workflow.md",
+      "source_sha256": "b4bc610382f08b69fb456e23853c9665e28663d9b533b60fe596820cf6c1ec63",
+      "export_sha256": "b4bc610382f08b69fb456e23853c9665e28663d9b533b60fe596820cf6c1ec63",
+      "changes": []
+    },
+    {
+      "file": "skills/maogai-review-doc-builder/SKILL.md",
+      "source_sha256": "c0b5b37ffc4b8a3973cb32956033e9d61de7681e2bd1844a9c9cc03e8c2b46f3",
+      "export_sha256": "4f59151ab9803b122672435dfc6e8a4c2e079f304ba388856c4ba72e3ec9bcf6",
+      "changes": [
+        "Personal absolute script paths replaced with skill-relative paths"
+      ]
+    },
+    {
+      "file": "skills/maogai-review-doc-builder/agents/openai.yaml",
+      "source_sha256": "f74ce88dc36c340e0882d2757ae1a86f39d9bb64cb7333160970aabedd09d56a",
+      "export_sha256": "d0c34b3836cb17f5a6793a9199c1e0db1a154cd7767ee5f42e7a0a1172c1d426",
+      "changes": [
+        "GB18030 converted to UTF-8"
+      ]
+    },
+    {
+      "file": "skills/maogai-review-doc-builder/references/output-contract.md",
+      "source_sha256": "03ebc4a4b33a1728d0b3a58f4dad6a03d1c7df82e8629c1a869356db297c5b07",
+      "export_sha256": "03ebc4a4b33a1728d0b3a58f4dad6a03d1c7df82e8629c1a869356db297c5b07",
+      "changes": []
+    },
+    {
+      "file": "skills/maogai-review-doc-builder/scripts/qa_review_docs.py",
+      "source_sha256": "7e53af876ed0a3edbe72b4d927a893c2bfcca76534a5c61b30cec7cd28391d78",
+      "export_sha256": "7e53af876ed0a3edbe72b4d927a893c2bfcca76534a5c61b30cec7cd28391d78",
+      "changes": []
+    },
+    {
+      "file": "skills/maogai-review-doc-builder/scripts/source_inventory.py",
+      "source_sha256": "de8e72c5bc93f75f71d7e327c17a3d5a921112790abc683e119f19c212a4d7d0",
+      "export_sha256": "de8e72c5bc93f75f71d7e327c17a3d5a921112790abc683e119f19c212a4d7d0",
+      "changes": []
+    },
+    {
+      "file": "skills/latex-polished-doc-builder/SKILL.md",
+      "source_sha256": "5e5cddd4ee817967fd5fe7329779bf2f15ec00feccdd329b62697263e0dd8eb0",
+      "export_sha256": "5e5cddd4ee817967fd5fe7329779bf2f15ec00feccdd329b62697263e0dd8eb0",
+      "changes": []
+    },
+    {
+      "file": "skills/latex-polished-doc-builder/agents/openai.yaml",
+      "source_sha256": "a7b2d6f0916a0aaa942e124e90f31d18d1db6fd19bab43580739b6439debc904",
+      "export_sha256": "1433bbf8a73d25af0a429716b1117a038db5ab6c89aedbd0824fba7391a6e8aa",
+      "changes": []
+    },
+    {
+      "file": "skills/latex-polished-doc-builder/references/publication_quality.md",
+      "source_sha256": "ccb966b6d23116add3263947e91730aa65f7170a6f6af9f403f6938898cbbf02",
+      "export_sha256": "ccb966b6d23116add3263947e91730aa65f7170a6f6af9f403f6938898cbbf02",
+      "changes": []
+    },
+    {
+      "file": "skills/latex-polished-doc-builder/scripts/render_pdf_contact_sheet.py",
+      "source_sha256": "45b70f1a1d0183d0ab4d466b2b80cae575f88199e05c873eb26282b808671454",
+      "export_sha256": "45b70f1a1d0183d0ab4d466b2b80cae575f88199e05c873eb26282b808671454",
+      "changes": []
+    },
+    {
+      "file": "skills/latex-polished-doc-builder/scripts/scan_tex_log.py",
+      "source_sha256": "855fdb21d80ac41210bc3546d0089ee5896e8f89aa6c502cbbc8c9de36d5ab45",
+      "export_sha256": "855fdb21d80ac41210bc3546d0089ee5896e8f89aa6c502cbbc8c9de36d5ab45",
+      "changes": []
+    }
+  ]
+}

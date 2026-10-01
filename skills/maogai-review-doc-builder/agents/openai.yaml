@@ -1,0 +1,4 @@
+interface:
+  display_name: "毛概复习文档生成器"
+  short_description: "Build chapter-based MaoGai exam review Word docs"
+  default_prompt: "Use $maogai-review-doc-builder to build two chapter-based 毛概 review Word documents from the materials in this folder."
